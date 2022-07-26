@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <title>Roll&Rol</title>
+    <link rel="icon" href="/images/fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="text-header">
+        <h1 class="title">ROLL & ROL</h1>
+        <h4 class="subtitle">Toda la actualidad del canal a un solo click</h4>
+      </div>
+      <button class="button-style hamburguerButton" id="button">
+        <img class="menu-icon" src="./images/icons8-menu-24.png" />
+      </button>
+    </header>
+
+    <div class="hidden slider" id="slider">
+      <button class="button-style buttonSlider" id="buttonSlider">
+        <img src="./images/icons8-xbox-x-22.png" />
+      </button>
+      <ul class="list_slider">
+        <li class="menu-element"><a href="./index.html">PRINCIPAL</a></li>
+        <li class="menu-element"><a href="./aboutme.html">SOBRE MI</a></li>
+        <li class="menu-element"><a href="./contact.html">CONTACTO</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="video-section">
+        <div class="last-video">
+          <h2 class="section-title">Último vídeo</h2>
+          <iframe
+            width="650"
+            height="365"
+            src="https://www.youtube.com/embed/VnFdBO9XJPk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="play-list" id="play-list">
+          <h2 class="section-title">Listas de reproducción</h2>
+          <div class="play-list-frames"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <a
+          href="https://www.youtube.com/channel/UCGCLzaAk6ubJlp_YKi-KkhQ"
+          target="_blank"
+          ><img src="images/youtube.png" class="social-icons"
+        /></a>
+        <a href="https://www.twitch.tv/rollandrol" target="_blank"
+          ><img src="images/twitch.png" class="social-icons"
+        /></a>
+        <a href="https://twitter.com/RollAndRol_" target="_blank"
+          ><img src="images/twitter.png" class="social-icons"
+        /></a>
+        <a href="https://discord.gg/kxpfY5T" target="_blank"
+          ><img src="images/discord.png" class="social-icons"
+        /></a>
+        <a href="https://ko-fi.com/rollandrol" target="_blank"
+          ><img src="images/kofi.png" class="social-icons"
+        /></a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./menu.js"></script>
+  </body>
+</html>

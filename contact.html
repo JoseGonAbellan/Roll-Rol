@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="icon" href="/images/fav-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="text-header">
+        <h1 class="title">ROLL & ROL</h1>
+        <h4 class="subtitle">Toda la actualidad del canal a un solo click</h4>
+      </div>
+      <button class="button-style hamburguerButton" id="button">
+        <img class="menu-icon" src="./images/icons8-menu-24.png" />
+      </button>
+    </header>
+
+    <div class="hidden slider" id="slider">
+      <button class="button-style buttonSlider" id="buttonSlider">
+        <img src="./images/icons8-xbox-x-22.png" />
+      </button>
+      <ul class="list_slider">
+        <li class="menu-element"><a href="./index.html">PRINCIPAL</a></li>
+        <li class="menu-element"><a href="./aboutme.html">SOBRE MI</a></li>
+        <li class="menu-element"><a href="./contact.html">CONTACTO</a></li>
+      </ul>
+    </div>
+    <main>
+      <h2 class="contactTitle">¡Contacta Conmigo!</h2>
+      <p>
+        Si necesitas contactar conmigo puedes enviar tu mensaje a través de este
+        formulario y te contestaré con la mayor brevedad posible. Si lo
+        prefieres puedes mandarme directamente un correo pinchando
+        <a href="mailto:contacto.rollandrol@gmail.com">aquí</a> o esribiendo a
+        <strong>contacto.rollandrol@gmail.com</strong>.
+      </p>
+
+      <form action="https://formspree.io/f/xqknrody" method="POST">
+        <fieldset class="form">
+          <legend>Formulario de Contacto</legend>
+          <div class="formContent">
+            <div>
+              <label for="name" class="inputs"></label>
+                Nombre
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Pepe Viyuela"
+                  class="inputs"
+              /></label>
+              <label for="email" class="inputs"
+                >Email de Contacto
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ejemplo@ejemplo.com"
+                  class="inputs"
+                  required
+              /></label>
+            </div>
+            <textarea
+              name="textArea"
+              id="textArea"
+              cols="100"
+              rows="15"
+              placeholder="Escribe aquí to mensaje :)"
+              class="inputs"
+              required
+            ></textarea>
+            <div>
+              <input type="submit" value="Enviar" class="inputs formButtons" />
+              <input type="reset" class="inputs formButtons" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="./menu.js"></script>
+  </body>
+</html>

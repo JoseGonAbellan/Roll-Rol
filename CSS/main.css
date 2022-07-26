@@ -1,0 +1,236 @@
+body {
+  background-image: url("/images/background.png");
+  background-size: 120%;
+  background-attachment: fixed;
+  color: aliceblue;
+  margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: aliceblue;
+  font-size: 4rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subtitle {
+  text-align: center;
+  color: aliceblue;
+  margin: 0px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.section-title,
+.contactTitle,
+.aboutMeTitle {
+  color: #f0f8ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+  width: 36%;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-video {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.play-list {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-list-frames {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-icons {
+  width: 50px;
+  padding: 30px;
+  transition: transform 0.2s;
+}
+
+.social-icons:hover {
+  transform: scale(1.5);
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width: 15rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  background-color: #175f4b;
+  border-radius: 0.25em;
+  list-style: none;
+  animation: moveToLeft 1s ease-in-out;
+}
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width: 10rem;
+  position: fixed;
+  top: 0;
+  padding: 0.5rem;
+  background-color: #6dceaf;
+  border-radius: 0.25em;
+  list-style: none;
+  right: -300px;
+  transition: all 1.5s ease;
+}
+
+#button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#buttonSlider {
+  padding-right: 27%;
+  padding-top: 5%;
+}
+
+.button-style {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  width: 40px;
+  transition: transform 0.2s;
+}
+
+.button-style:hover {
+  transform: scale(1.5);
+}
+
+.menu-element {
+  list-style: none;
+  padding-top: 15px;
+  transition: transform 0.2s;
+}
+
+.menu-element:hover {
+  transform: scale(1.2);
+}
+
+a,
+a:hover {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.list_slider {
+  padding-right: 35%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+legend,
+li {
+  color: #f0f8ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.inputs {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.formButtons {
+  background-color: #175f4b;
+  color: #f0f8ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  border-color: #183a30;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.formButtons:hover {
+  transform: scale(1.1);
+}
+
+fieldset {
+  border-color: #f0f8ff;
+}
+
+.aboutMe {
+  width: 50%;
+  text-align: justify;
+  list-style: none;
+}
+
+.kofi {
+  position: fixed;
+  top: 150px;
+  right: 270px;
+}
+
+.imageAboutMe {
+  border-radius: 50%;
+  width: 6%;
+  position: absolute;
+  left: 300px;
+  bottom: 350px;
+}
+
+.footerAboutMe {
+  margin-top: 100px;
+}

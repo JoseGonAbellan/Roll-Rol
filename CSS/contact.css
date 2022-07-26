@@ -1,0 +1,125 @@
+body {
+  background-image: url("/images/background.png");
+  background-size: 120%;
+  background-attachment: fixed;
+  color: aliceblue;
+}
+
+.title {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: aliceblue;
+  font-size: 4rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subtitle {
+  text-align: center;
+  color: aliceblue;
+  margin: 0px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.section-title,
+.contactTitle {
+  color: #f0f8ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+  width: 36%;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width: 15rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  background-color: #175f4b;
+  border-radius: 0.25em;
+  list-style: none;
+  animation: moveToLeft 1s ease-in-out;
+}
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width: 10rem;
+  position: fixed;
+  top: 0;
+  padding: 0.5rem;
+  background-color: #6dceaf;
+  border-radius: 0.25em;
+  list-style: none;
+  right: -300px;
+  transition: all 1.5s ease;
+}
+
+#buttonContact {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#buttonSliderContact {
+  padding-right: 27%;
+  padding-top: 5%;
+}
+
+.button-style {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  width: 40px;
+  transition: transform 0.2s;
+}
+
+.button-style:hover {
+  transform: scale(1.5);
+}
+
+.menu-element {
+  list-style: none;
+  padding-top: 15px;
+  transition: transform 0.2s;
+}
+
+.menu-element:hover {
+  transform: scale(1.2);
+}
+
+a,
+a:hover {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.list_slider {
+  padding-right: 35%;
+}
